@@ -2,10 +2,10 @@
 
 //palindrome is a number that can be read from both ways e.g
 //9009 -> it is the same when read both ways from right to left and left to right 
-
+mod fibonacci;
+use fibonacci::fibo;
 
 //function to check for the palindromee
-
 
 fn my_palindrome(n: u32) -> bool{
     let my_string = n.to_string();
@@ -14,6 +14,7 @@ fn my_palindrome(n: u32) -> bool{
 }
 fn largest_palindrome() -> u32{
     let mut max_palindrome = 0;
+  
 
 for i in 100..1000{
     for j in 100..1000{
@@ -31,7 +32,12 @@ max_palindrome
 
 fn main(){
     let result = largest_palindrome();
-    println!("The largest Palindrome is {}",result);
+    println!("The largest Palindrome is {}", result);
+    
+
+    //calling fibonacci function
+
+    fibo(8);
 
 
 }
