@@ -37,7 +37,7 @@ fn main(){
 
     //calling fibonacci function
 
-    fibo(8);
+    fibo(12);
 
 
 }
