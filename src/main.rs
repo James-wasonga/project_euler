@@ -5,6 +5,9 @@
 mod fibonacci;
 use fibonacci::fibo;
 
+mod euler_5;
+use euler_5::smallest;
+
 //function to check for the palindromee
 
 fn my_palindrome(n: u32) -> bool{
@@ -37,7 +40,13 @@ fn main(){
 
     //calling fibonacci function
 
-    fibo(12);
+     fibo(12);
+
+
+     
+        let n = 20;
+        let result = smallest(n);
+        println!("The smallest number that is evenly divisible by all of the numbers from 1 to {} is: {}", n, result);
 
 
 }
